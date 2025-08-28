@@ -8,14 +8,59 @@ int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
+    // Definindo o número de casas a serem movidas para cada peça
+    const int casasTorre = 5;
+    const int casasBispo = 5;
+    const int casasRainha = 8;
+
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+
+    // ---
+    // Movimento do Bispo - Usando a estrutura while
+    // Simula o movimento do Bispo cinco casas na diagonal (para cima e para a direita).
+    // ---
+    printf("--- Movimento do Bispo ---\n");
+    int i = 0;
+    while (i < casasBispo) {
+        printf("Cima, Direita\n");
+        i++;
+    }
+
+    printf("\n"); // Adiciona uma linha em branco para separar os movimentos
+
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
+    // ---
+    // Movimento da Torre - Usando a estrutura for
+    // Simula o movimento da Torre cinco casas para a direita.
+    // ---
+    printf("--- Movimento da Torre ---\n");
+    for (int i = 0; i < casasTorre; i++) {
+        printf("Direita\n");
+    }
+
+    printf("\n"); // Adiciona uma linha em branco para separar os movimentos
+
+
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+    // ---
+    // Movimento da Rainha - Usando a estrutura do-while
+    // Simula o movimento da Rainha oito casas para a esquerda.
+    // ---
+    printf("--- Movimento da Rainha ---\n");
+    int j = 0;
+    if (casasRainha > 0) { // Garante que o loop do-while execute pelo menos uma vez
+        do {
+            printf("Esquerda\n");
+            j++;
+        } while (j < casasRainha);
+    }
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
